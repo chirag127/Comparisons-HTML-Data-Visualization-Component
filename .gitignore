@@ -1,0 +1,42 @@
+# Apex Technical Authority - Standard .gitignore
+
+# Python / uv / Ruff / Pytest Cache & Config
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+coverage/
+*.coverage
+
+# IDE / Editor specific
+.idea/
+.vscode/
+*.swp
+*~
+*.DS_Store
+
+# Environment Variables
+.env
+.venv/
+v-env/
+venv/
+env/
+ENV/
+
+# Temporary files
+*.tmp
+*.log
+
+# OS specific
+.DS_Store
+Thumbs.db
