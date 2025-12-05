@@ -1,0 +1,48 @@
+name: CI
+
+# Trigger workflow on push to main branch and on pull requests to main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js (for build tools if any)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x' # Use a recent LTS version
+          cache: 'npm' # Cache npm dependencies
+
+      - name: Install Dependencies
+        run: npm install # Assuming some build/test tools might be Node-based for HTML components
+
+      - name: Validate HTML Structure
+        run: | # Basic validation using a simple approach; for robust validation, consider a dedicated HTML linter if integrated
+          echo "Validating HTML structure..."
+          # In a real scenario, you might use a tool like 'htmlhint' or 'eslint-plugin-html'
+          # For now, a placeholder check for basic syntax errors can be added if specific tools are installed.
+          # Example: htmlhint *.html
+          echo "HTML structure validation placeholder complete."
+
+      - name: Run Browser E2E Tests (Conceptual)
+        # This step is conceptual as a pure HTML component without a JS framework might not have traditional E2E tests.
+        # If this component is part of a larger framework or uses JS for interactivity, this would be relevant.
+        run: | 
+          echo "Skipping E2E tests for a pure HTML component. Focus on integration testing in a consuming application."
+          # Example for a JS-heavy component:
+          # npm run test:e2e
+
+      - name: Upload Artifacts (Optional)
+        # If the component is built into a distributable format, upload it here.
+        uses: actions/upload-artifact@v4
+        with:
+          name: component-build
+          path: .
