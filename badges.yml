@@ -1,0 +1,53 @@
+# Badges Configuration
+# Managed by Apex Technical Authority
+# Project: Comparisons-HTML-Data-Visualization-Component
+
+badges:
+  - name: "Build Status"
+    link: "https://github.com/chirag127/Comparisons-HTML-Data-Visualization-Component/actions/workflows/ci.yml"
+    icon: "github"
+    color: "success"
+    description: "CI Workflow Status"
+    markdown: "[![Build Status](https://img.shields.io/github/actions/workflow/status/chirag127/Comparisons-HTML-Data-Visualization-Component/ci.yml?branch=main&style=flat-square&logo=github)]()"
+
+  - name: "Code Coverage"
+    link: "https://app.codecov.io/gh/chirag127/Comparisons-HTML-Data-Visualization-Component"
+    icon: "codecov"
+    color: "brightgreen"
+    description: "Code Coverage Percentage"
+    markdown: "[![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/Comparisons-HTML-Data-Visualization-Component?style=flat-square&logo=codecov)]()"
+
+  - name: "License"
+    link: "https://github.com/chirag127/Comparisons-HTML-Data-Visualization-Component/blob/main/LICENSE"
+    icon: "" # Placeholder, will be dynamically set if possible or a generic one used
+    color: "blue"
+    description: "Project License"
+    markdown: "[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg?style=flat-square)]()"
+
+  - name: "Tech Stack - HTML"
+    link: "https://github.com/chirag127/Comparisons-HTML-Data-Visualization-Component"
+    icon: "html5"
+    color: "orange"
+    description: "Primary Technology"
+    markdown: "[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)]()"
+
+  - name: "Tech Stack - JavaScript"
+    link: "https://github.com/chirag127/Comparisons-HTML-Data-Visualization-Component"
+    icon: "javascript"
+    color: "yellow"
+    description: "Component Logic"
+    markdown: "[![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)]()"
+
+  - name: "Tech Stack - CSS"
+    link: "https://github.com/chirag127/Comparisons-HTML-Data-Visualization-Component"
+    icon: "css3"
+    color: "blue"
+    description: "Styling Language"
+    markdown: "[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)]()"
+
+  - name: "GitHub Stars"
+    link: "https://github.com/chirag127/Comparisons-HTML-Data-Visualization-Component"
+    icon: "github"
+    color: "gold"
+    description: "Number of GitHub Stars"
+    markdown: "[![GitHub Stars](https://img.shields.io/github/stars/chirag127/Comparisons-HTML-Data-Visualization-Component?style=flat-square&logo=github)]()"
